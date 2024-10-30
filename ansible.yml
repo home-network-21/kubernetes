@@ -1,4 +1,4 @@
-- hosts: all 
+- hosts: 172.16.31.127 
   become: true
   tasks: 
      - name: delete old deployment
