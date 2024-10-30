@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER vikashashoke@gmail.com
+MAINTAINER abouttime1021@gmail.com
 
 RUN sed -i 's|^mirrorlist=|#mirrorlist=|' /etc/yum.repos.d/CentOS-Base.repo && \
     sed -i 's|^#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|' /etc/yum.repos.d/CentOS-Base.repo
