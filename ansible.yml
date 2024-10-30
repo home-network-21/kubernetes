@@ -1,11 +1,11 @@
-- hosts: all
+- hosts: 172.16.31.127 
   become: true
   tasks: 
      - name: delete old deployment
-       command: kubectl delete -f /home/ubuntu/Deployment.yml
+       command: kubectl delete -f /home/abdulvakeel/Deployment.yml
      - name: delete old service
-       command: kubectl delete -f /home/ubuntu/Service.yml
+       command: kubectl delete -f /home/abdulvakeel/Service.yml
      - name: create new deployment
-       command: kubectl apply -f /home/ubuntu/Deployment.yml
+       command: kubectl apply -f /home/abdulvakeel/Deployment.yml
      - name: create new service
-       command: kubectl apply -f /home/ubuntu/Service.yml
+       command: kubectl apply -f /home/abdulvakeel/Service.yml
